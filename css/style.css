@@ -1,0 +1,61 @@
+/* Portfolio DevOps — feuille de style (V1) */
+:root {
+  --principale: #1F3864;   /* bleu marine */
+  --accent: #0D7377;       /* bleu canard */
+  --fond: #ffffff;
+  --texte: #222222;
+  --gris: #f2f4f7;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+  color: var(--texte);
+  background: var(--fond);
+  line-height: 1.6;
+}
+
+/* En-tête et menu */
+.entete { background: var(--principale); position: sticky; top: 0; }
+.menu {
+  max-width: 1000px; margin: auto; padding: 14px 20px;
+  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;
+}
+.menu a { color: #fff; text-decoration: none; }
+.logo { font-weight: 700; font-size: 1.2rem; }
+.menu ul { list-style: none; display: flex; gap: 18px; }
+
+/* Section d'accueil */
+.hero {
+  text-align: center; padding: 90px 20px;
+  background: linear-gradient(135deg, var(--principale), var(--accent));
+  color: #fff;
+}
+.hero h1 { font-size: 2.4rem; }
+.hero span { color: #ffd166; }
+.bouton {
+  display: inline-block; margin-top: 24px; padding: 12px 26px;
+  background: #fff; color: var(--principale); border-radius: 30px;
+  text-decoration: none; font-weight: 600;
+}
+
+/* Blocs de contenu */
+.bloc { max-width: 1000px; margin: auto; padding: 60px 20px; }
+.bloc h2 { color: var(--principale); margin-bottom: 18px; border-left: 5px solid var(--accent); padding-left: 12px; }
+
+.cartes { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 14px; }
+.cartes li { background: var(--gris); padding: 16px; border-radius: 10px; text-align: center; font-weight: 600; }
+
+.projets { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+.projet { border: 1px solid #dde3ea; border-radius: 12px; padding: 22px; }
+.projet h3 { color: var(--accent); margin-bottom: 8px; }
+
+/* Pied de page */
+.pied { background: var(--principale); color: #fff; text-align: center; padding: 18px; }
+
+/* Responsive : petits écrans */
+@media (max-width: 600px) {
+  .hero h1 { font-size: 1.7rem; }
+  .menu ul { gap: 10px; font-size: .9rem; margin-top: 8px; }
+}

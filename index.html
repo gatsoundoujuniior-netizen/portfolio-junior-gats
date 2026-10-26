@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Étudiant DevOps</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="entete">
+    <nav class="menu">
+      <a class="logo" href="#accueil">Mon&nbsp;Portfolio</a>
+      <ul>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="accueil" class="hero">
+      <h1>Bonjour, je suis <span>GATSOUNDOU JUNIOR</span></h1>
+      <p>Élève ingénieur en Génie Informatique — passionné par le DevOps et le Cloud.</p>
+      <a class="bouton" href="#projets">Voir mes projets</a>
+    </section>
+
+    <section id="apropos" class="bloc">
+      <h2>À propos</h2>
+      <p>J'apprends à livrer des applications de façon fiable et automatisée :
+         versionnement avec Git, conteneurisation avec Docker et intégration continue avec GitHub Actions.</p>
+    </section>
+
+    <section id="competences" class="bloc">
+      <h2>Compétences techniques</h2>
+      <ul class="cartes">
+        <li>HTML &amp; CSS</li>
+        <li>Git &amp; GitHub</li>
+        <li>Docker &amp; Nginx</li>
+        <li>Docker Compose</li>
+        <li>GitHub Actions</li>
+        <li>Linux</li>
+      </ul>
+    </section>
+
+    <section id="projets" class="bloc">
+      <h2>Projets réalisés</h2>
+      <div class="projets">
+        <article class="projet">
+          <h3>Portfolio conteneurisé</h3>
+          <p>Ce site, servi par Nginx dans un conteneur Docker.</p>
+        </article>
+        <article class="projet">
+          <h3>Pipeline CI/CD</h3>
+          <p>Tests automatiques et déploiement sur GitHub Pages à chaque push.</p>
+        </article>
+        <article class="projet">
+          <h3>Évaluation de réponses IA en français</h3>
+          <p>Portfolio d'évaluation reproductible basé sur 10 cas synthétiques, avec scores pondérés et détection des échecs critiques. <a href="https://github.com/gatsoundoujuniior-netizen/french-llm-response-evaluation">Voir le projet sur GitHub</a>.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="bloc">
+      <h2>Contact</h2>
+      <p>Écrivez-moi : <a href="mailto:prenom.nom@exemple.ma">prenom.nom@exemple.ma</a></p>
+    </section>
+  </main>
+
+  <footer class="pied">
+    <p>© 2026 — Portfolio réalisé pendant l'atelier DevOps · Version 1</p>
+  </footer>
+</body>
+</html>
