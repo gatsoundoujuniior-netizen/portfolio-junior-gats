@@ -8,6 +8,7 @@ LABEL org.opencontainers.image.title="portfolio-devops" \
 # Copie du site dans le dossier servi par Nginx
 COPY index.html /usr/share/nginx/html/
 COPY css/ /usr/share/nginx/html/css/
+COPY assets/ /usr/share/nginx/html/assets/
 
 # Correctif : rendre les fichiers lisibles par l'utilisateur nginx
 # (sinon erreur 403 Forbidden / Permission denied)
