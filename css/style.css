@@ -1,7 +1,7 @@
-/* Portfolio DevOps — feuille de style (V1) */
+/* Portfolio DevOps — feuille de style (V2 — nouvelle charte) */
 :root {
-  --principale: #1F3864;   /* bleu marine */
-  --accent: #0D7377;       /* bleu canard */
+  --principale: #011760;   /* marine HESTIM */
+  --accent: #CA2F1D;       /* rouge HESTIM */
   --fond: #ffffff;
   --texte: #222222;
   --gris: #f2f4f7;
@@ -33,7 +33,8 @@ body {
   color: #fff;
 }
 .hero h1 { font-size: 2.4rem; }
-.hero span { color: #ffd166; }
+.hero h1 span { color: #E8641E; }
+.badge { display: inline-block; margin-bottom: 14px; padding: 4px 14px; border-radius: 20px; background: #E8641E; color: #fff; font-weight: 700; }
 .bouton {
   display: inline-block; margin-top: 24px; padding: 12px 26px;
   background: #fff; color: var(--principale); border-radius: 30px;
