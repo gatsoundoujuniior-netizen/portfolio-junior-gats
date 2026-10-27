@@ -1,78 +1,213 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio — Étudiant DevOps</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Junior Stevy Gatsoundou | AI Engineer, Multi-Agent Systems &amp; RegTech</title>
+  <meta name="description" content="AI engineering student building multi-agent systems for AML/KYC screening, fraud detection and recruitment automation. Top 13% at the 2026 Reply AI Challenge. Available for a 6-month internship from February 2027.">
+  <meta property="og:title" content="Junior Stevy Gatsoundou | AI Engineer">
+  <meta property="og:description" content="Multi-agent systems, RAG and MLOps for fintech compliance and fraud detection.">
+  <meta property="og:type" content="website">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
   <header class="entete">
-    <nav class="menu">
-      <a class="logo" href="#accueil">Mon&nbsp;Portfolio</a>
+    <nav class="menu" aria-label="Main navigation">
+      <a class="logo" href="#top">Junior<span>.</span></a>
       <ul>
-        <li><a href="#apropos">À propos</a></li>
-        <li><a href="#competences">Compétences</a></li>
-        <li><a href="#projets">Projets</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#pipeline">This site</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section id="accueil" class="hero">
-      <span class="badge">Version 2</span>
-      <h1>Bonjour, je suis <span>GATSOUNDOU JUNIOR</span></h1>
-      <p>Élève ingénieur en Génie Informatique — passionné par le DevOps et le Cloud.</p>
-      <a class="bouton" href="#projets">Voir mes projets</a>
-    </section>
+  <main id="top">
 
-    <section id="apropos" class="bloc">
-      <h2>À propos</h2>
-      <p>J'apprends à livrer des applications de façon fiable et automatisée :
-         versionnement avec Git, conteneurisation avec Docker et intégration continue avec GitHub Actions.</p>
-    </section>
-
-    <section id="competences" class="bloc">
-      <h2>Compétences techniques</h2>
-      <ul class="cartes">
-        <li>HTML &amp; CSS</li>
-        <li>Git &amp; GitHub</li>
-        <li>Docker &amp; Nginx</li>
-        <li>Docker Compose</li>
-        <li>GitHub Actions</li>
-        <li>Linux</li>
-        <li>Kubernetes (notions)</li>
-      </ul>
-    </section>
-
-    <section id="projets" class="bloc">
-      <h2>Projets réalisés</h2>
-      <div class="projets">
-        <article class="projet">
-          <h3>Portfolio conteneurisé</h3>
-          <p>Ce site, servi par Nginx dans un conteneur Docker.</p>
-        </article>
-        <article class="projet">
-          <h3>Pipeline CI/CD</h3>
-          <p>Tests automatiques, image Docker et déploiement sur GitHub Pages à chaque push.</p>
-        </article>
-        <article class="projet">
-          <h3>Évaluation de réponses IA en français</h3>
-          <p>Portfolio d'évaluation reproductible basé sur 10 cas synthétiques, avec scores pondérés et détection des échecs critiques. <a href="https://github.com/gatsoundoujuniior-netizen/french-llm-response-evaluation">Voir le projet sur GitHub</a>.</p>
-        </article>
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="badge">Available for a 6-month internship from February 2027</p>
+        <h1>I build AI agents that hold up in <span>regulated, real-world</span> settings.</h1>
+        <p class="lead">
+          AI engineering student at HESTIM (Casablanca). I design multi-agent systems, RAG pipelines
+          and fraud detection for fintech compliance, and I have shipped them in two internships.
+        </p>
+        <div class="actions">
+          <a class="bouton" href="assets/CV_Junior_Gatsoundou_EN.pdf" download>Download my CV</a>
+          <a class="bouton bouton-ghost" href="#projects">See my work</a>
+          <a class="bouton bouton-ghost" href="https://github.com/gatsoundoujuniior-netizen" rel="noopener">GitHub</a>
+        </div>
+        <ul class="chiffres" aria-label="Key results">
+          <li><strong>90.8%</strong><span>recall on a PEP screening agent covering 13 countries</span></li>
+          <li><strong>31,500+</strong><span>PEP candidates collected in 6 hours</span></li>
+          <li><strong>Top 13%</strong><span>of 1,975 teams, Reply AI Challenge 2026</span></li>
+        </ul>
       </div>
     </section>
 
-    <section id="contact" class="bloc">
-      <h2>Contact</h2>
-      <p>Écrivez-moi : <a href="mailto:prenom.nom@exemple.ma">prenom.nom@exemple.ma</a></p>
-      <p>Retrouvez mes projets sur GitHub.</p>
+    <section class="bloc" id="projects">
+      <h2>Selected projects</h2>
+      <p class="intro">Each project states the problem, what I built and the result. Public code is linked when available.</p>
+
+      <div class="projets">
+
+        <article class="projet">
+          <p class="tag">Internship · ScreenEdge Africa</p>
+          <h3>Multi-source PEP screening agent</h3>
+          <p><strong>Problem.</strong> Banks must identify politically exposed persons country by country, from scattered sources.</p>
+          <p><strong>Built.</strong> An end-to-end agent that chains Tavily, Serper, Wikipedia and OpenSanctions, with automatic LLM fallback, across 13 countries. A PostgreSQL audit trail logs every LLM decision.</p>
+          <p><strong>Result.</strong> 204 qualified PEPs at 90.8% recall. 31,500+ candidates collected from official sources in 6 hours.</p>
+          <p class="stack">Python · LLM agents · PostgreSQL · OpenSanctions</p>
+          <p class="note">Client work, code is private.</p>
+        </article>
+
+        <article class="projet">
+          <p class="tag">Internship · Holokia</p>
+          <h3>AutoFlow, AI recruitment platform</h3>
+          <p><strong>Problem.</strong> Recruiters lose hours scoring CVs and writing meeting minutes.</p>
+          <p><strong>Built.</strong> A CV-scoring agent on Groq Qwen3-32B, a Whisper-based meeting reporting agent, and an end-to-end GDPR consent flow. Led the migration from n8n to FastAPI with CI/CD.</p>
+          <p><strong>Result.</strong> 63 CVs scored out of 100 and structured minutes generated automatically.</p>
+          <p class="stack">React 19 · FastAPI · Supabase · Docker · GitHub Actions</p>
+          <p class="note">Company project, code is private.</p>
+        </article>
+
+        <article class="projet">
+          <p class="tag">Competition · Top 13% of 1,975 teams</p>
+          <h3>Reply AI Challenge: fraud detection</h3>
+          <p><strong>Problem.</strong> Screen transactions for fraud with a strict API budget.</p>
+          <p><strong>Built.</strong> A 3-tier multi-agent architecture: a parallel transaction screener on GPT-4o, a validator, then a Chief Fraud Officer agent on Claude. Team of 2.</p>
+          <p><strong>Result.</strong> EUR 30,600 of fraudulent transactions flagged across 2 datasets on a USD 40 API budget.</p>
+          <p class="stack">Multi-agent · GPT-4o · Claude · Python</p>
+        </article>
+
+        <article class="projet">
+          <p class="tag">Hackathon · Alpaca AI Trading Agents</p>
+          <h3>Autonomous options trading agent</h3>
+          <p><strong>Problem.</strong> Trading agents that let an LLM decide are hard to trust and hard to audit.</p>
+          <p><strong>Built.</strong> A wheel-strategy agent driven by implied volatility, with a deterministic risk guard: position caps, correlated-group limits and circuit breakers at 5%, 10% and 15%.</p>
+          <p><strong>Result.</strong> Ran on a USD 100k paper account with real market data and a live React and FastAPI dashboard.</p>
+          <p class="stack">Python · alpaca-py · FastAPI · React</p>
+        </article>
+
+        <article class="projet">
+          <p class="tag">Embedded AI · 2nd place</p>
+          <h3>Indoor air-quality monitoring (TinyML)</h3>
+          <p><strong>Problem.</strong> Monitor CO2, temperature and humidity in real time on a constrained device.</p>
+          <p><strong>Built.</strong> An edge IoT system trained on 6,200 real measurements that transmits only on anomaly. Led a team of 4.</p>
+          <p><strong>Result.</strong> 96.4% accuracy, F1 of 77.6%, under 0.7 mJ per inference, and up to 97% less data sent.</p>
+          <p class="stack">TensorFlow Lite · Raspberry Pi 4 · Python</p>
+        </article>
+
+        <article class="projet">
+          <p class="tag">MLOps · In progress</p>
+          <h3>Aircraft engine predictive maintenance</h3>
+          <p><strong>Problem.</strong> Predict the remaining useful life of jet engines and keep the model healthy in production.</p>
+          <p><strong>Building.</strong> An end-to-end pipeline on the NASA C-MAPSS dataset with experiment tracking, an API, monitoring and drift detection.</p>
+          <p class="stack">MLflow · FastAPI · Docker · Prometheus · Grafana · Evidently</p>
+        </article>
+
+      </div>
+
+      <p class="more">More on <a href="https://github.com/gatsoundoujuniior-netizen?tab=repositories" rel="noopener">GitHub</a>: <a href="https://github.com/gatsoundoujuniior-netizen/-sentinel-pacte" rel="noopener">Sentinel Pacte</a> (IoT anomaly detection, 96.8% recall), <a href="https://github.com/gatsoundoujuniior-netizen/detection-fraude-bancaire" rel="noopener">banking fraud detection</a> and <a href="https://github.com/gatsoundoujuniior-netizen/tp_RAG_et_agentic" rel="noopener">a RAG system for PDFs</a>.</p>
     </section>
+
+    <section class="bloc bloc-gris" id="experience">
+      <h2>Experience and education</h2>
+      <ol class="timeline">
+        <li>
+          <p class="when">May to Aug 2026 · Remote</p>
+          <h3>AML / RegTech Engineer Intern, ScreenEdge Africa</h3>
+          <p>PEP screening agent across 13 countries, automated source collection and a full LLM audit trail.</p>
+        </li>
+        <li>
+          <p class="when">Apr to Aug 2026 · Casablanca, hybrid</p>
+          <h3>AI &amp; Automation Engineer Intern, Holokia</h3>
+          <p>AutoFlow recruitment platform: scoring agent, reporting agent, GDPR consent flow, CI/CD migration.</p>
+        </li>
+        <li>
+          <p class="when">2025 to 2027</p>
+          <h3>HESTIM, Casablanca</h3>
+          <p>State Engineering Degree in Computer Science and AI.</p>
+        </li>
+        <li>
+          <p class="when">2024 to 2025</p>
+          <h3>EMG, Rabat</h3>
+          <p>State Engineering Degree in Computer Science.</p>
+        </li>
+        <li>
+          <p class="when">2022 to 2024</p>
+          <h3>ESSTI, Rabat</h3>
+          <p>Preparatory cycle. Best Company / Integrator Project award.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="bloc" id="stack">
+      <h2>Stack</h2>
+      <div class="groupes">
+        <div>
+          <h3>AI and GenAI</h3>
+          <ul class="cartes">
+            <li>Python</li><li>LLMs</li><li>RAG</li><li>LangChain</li><li>LangGraph</li><li>Prompt engineering</li><li>scikit-learn</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Backend and data</h3>
+          <ul class="cartes">
+            <li>FastAPI</li><li>SQL</li><li>PostgreSQL</li><li>ChromaDB</li><li>Apache Spark</li><li>Hadoop</li><li>HDFS</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Cloud and DevOps</h3>
+          <ul class="cartes">
+            <li>Docker</li><li>Git</li><li>GitHub Actions</li><li>AWS</li><li>Linux</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Certifications</h3>
+          <ul class="cartes">
+            <li>AWS Academy Cloud Foundations</li><li>Anthropic AI Fluency</li><li>IBM Data Science</li><li>In progress: AWS AI Practitioner</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Languages</h3>
+          <ul class="cartes">
+            <li>French, native</li><li>English, upper intermediate</li><li>Spanish, beginner</li><li>Chinese, beginner</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloc bloc-gris" id="pipeline">
+      <h2>This site ships like production software</h2>
+      <p class="intro">Every push to <code>main</code> runs the same checks I would expect on a team.</p>
+      <ol class="etapes">
+        <li><strong>Test</strong><span>Automated checks on the page structure</span></li>
+        <li><strong>Build</strong><span>Docker image built and smoke tested</span></li>
+        <li><strong>Release</strong><span>Optional publish to Docker Hub</span></li>
+        <li><strong>Deploy</strong><span>Static files published to GitHub Pages</span></li>
+      </ol>
+    </section>
+
+    <section class="bloc contact" id="contact">
+      <h2>Let's talk</h2>
+      <p class="intro">I am looking for a 6-month end-of-studies internship starting February 2027, on agents, fraud, compliance or MLOps.</p>
+      <div class="actions">
+        <a class="bouton bouton-plein" href="mailto:j.gatsoundou@hestim.ma">j.gatsoundou@hestim.ma</a>
+        <a class="bouton bouton-plein" href="https://www.linkedin.com/in/junior-stevy-gatsoundou" rel="noopener">LinkedIn</a>
+        <a class="bouton bouton-plein" href="https://github.com/gatsoundoujuniior-netizen" rel="noopener">GitHub</a>
+        <a class="bouton bouton-plein" href="assets/CV_Junior_Gatsoundou_EN.pdf" download>Download CV</a>
+      </div>
+    </section>
+
   </main>
 
   <footer class="pied">
-    <p>© 2026 — Portfolio réalisé pendant l'atelier DevOps · Version 2</p>
+    <p>Junior Stevy Gatsoundou · Casablanca, Morocco</p>
   </footer>
+
 </body>
 </html>
