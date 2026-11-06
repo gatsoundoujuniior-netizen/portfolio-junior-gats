@@ -148,7 +148,7 @@
             <p class="tag">Internship · ScreenEdge Africa</p>
             <h3>ScreenEdge, AML/CFT sanctions &amp; PEP screening</h3>
             <p><strong>Problem.</strong> African obliged entities must screen sanctions and politically exposed persons, report to authorities (CNASNU, CENTIF, CTAF, ANIF) and prove compliance at any time, across names written in Arabic, Cyrillic or African languages.</p>
-            <p><strong>Built.</strong> A cross-script matching engine (Jaro-Winkler, sentence-transformers, adaptive weighting), a PEP collection agent that reads official sources, including protected ones, and a PEP qualification agent that checks each person against a country repository (official functions, local law, FATF status) to cut false positives.</p>
+            <p><strong>Built.</strong> A cross-script matching engine (Jaro-Winkler, sentence-transformers, adaptive weighting), a PEP collection agent that reads official sources, including sites that require a browser, and a PEP qualification agent that checks each person against a country repository (official functions, local law, FATF status) to cut false positives.</p>
             <p><strong>Result.</strong> 204 qualified PEPs, 90.8% recall on a 105-case multilingual dataset, 31,500+ candidates collected automatically in 6 hours.</p>
             <ul class="stack"><li>LangGraph</li><li>Groq</li><li>Gemini</li><li>sentence-transformers</li><li>Playwright</li><li>PostgreSQL</li></ul>
             <p class="note">Client work, code is private.</p>
@@ -172,6 +172,16 @@
             <p><strong>Result.</strong> EUR 30,600 of fraudulent transactions flagged across 2 datasets on a USD 40 API budget.</p>
             <ul class="stack"><li>Multi-agent</li><li>GPT-4o</li><li>Claude</li><li>Python</li></ul>
             <p class="liens-projet"><a href="https://github.com/gatsoundoujuniior-netizen/REPLYAICHALLENGE" rel="noopener">View code</a></p>
+          </article>
+
+          <article class="projet verre reveal">
+            <p class="tag">Data governance · Team project</p>
+            <h3>Master data management for AI agents</h3>
+            <p><strong>Problem.</strong> Official SEC sources describe the same companies with conflicting names and missing fields, and an AI agent would answer from any of them with the same confidence.</p>
+            <p><strong>Built.</strong> As Data Steward for the Finance domain: identifier standardization, deterministic matching on the official CIK, survivorship rules per attribute with source traceability, quality controls and an OpenMetadata catalogue. First brick of a governance platform for AI agents.</p>
+            <p><strong>Result.</strong> 8,485 golden records from 3 sources with 0 duplicates, and country completeness raised from 49% to 98.8%.</p>
+            <ul class="stack"><li>PostgreSQL</li><li>SQL</li><li>Python</li><li>OpenMetadata</li><li>Docker</li></ul>
+            <p class="liens-projet"><a href="https://github.com/gatsoundoujuniior-netizen/multi-agent-ai-governance" rel="noopener">View code</a></p>
           </article>
 
           <article class="projet verre reveal">
@@ -244,7 +254,7 @@
           </article>
 
         </div>
-        <p class="more">More on <a href="https://github.com/gatsoundoujuniior-netizen?tab=repositories" rel="noopener">GitHub</a>: <a href="https://github.com/gatsoundoujuniior-netizen/tp_RAG_et_agentic" rel="noopener">a RAG system for PDFs</a> and <a href="https://github.com/gatsoundoujuniior-netizen/prompt-engineering-sma-tp1" rel="noopener">prompt engineering for multi-agent systems</a>.</p>
+        <p class="more">More on <a href="https://github.com/gatsoundoujuniior-netizen?tab=repositories" rel="noopener">GitHub</a>: <a href="https://github.com/gatsoundoujuniior-netizen/langchain-agent-tools" rel="noopener">a LangChain agent with memory and tools</a>, <a href="https://github.com/gatsoundoujuniior-netizen/pdf-rag-assistant" rel="noopener">a RAG system for PDFs</a> and <a href="https://github.com/gatsoundoujuniior-netizen/financial-sentiment-prompt-engineering" rel="noopener">financial sentiment analysis through prompt engineering</a>.</p>
       </div>
 
       <div class="panneau" role="tabpanel" id="panel-certifs" aria-labelledby="tab-certifs">
@@ -297,7 +307,7 @@
           <div class="groupe verre reveal">
             <h3>Backend and data</h3>
             <ul class="cartes">
-              <li>FastAPI</li><li>SQL</li><li>PostgreSQL</li><li>Supabase</li><li>ChromaDB</li><li>Playwright</li><li>Streamlit</li><li>Apache Spark</li><li>Hadoop</li><li>HDFS</li>
+              <li>FastAPI</li><li>SQL</li><li>PostgreSQL</li><li>OpenMetadata</li><li>Data governance</li><li>Supabase</li><li>ChromaDB</li><li>Playwright</li><li>Streamlit</li><li>Apache Spark</li><li>Hadoop</li><li>HDFS</li>
             </ul>
           </div>
           <div class="groupe verre reveal">
